@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Movie Deck</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="/">
+            <h1>Movie Deck</h1>
+        </a>
+    </header>
 
+    <!-- SEARCH BAR  -->
+
+    <div class="search-bar">
+        <input type="search" name="search" id="search-input" placeholder="Search by name.." autocomplete="off">
+        <button class="search-btn">Search</button>
+    </div>
+
+    <!-- sort tabs -->
+    <div class="sorting-options">
+        <button id="sort-by-date">Sort by date (Oldest to Latest)</button>
+        <button id="sort-by-rating">Sort by ratings (Least to Most)</button>
+    </div>
+
+    <!-- Listing tabs -->
+    <div class="tabs">
+        <button id="all-tab" class="active-tab">All</button>
+        <button id="favourite-tab">Favorites</button>
+    </div>
+    
+    <!-- Listing -->
+    <div class="movies-list-paganation-btns">
+        <ul id="movies-list">
+            <!-- <li class="card">
+                <img src="https://s.studiobinder.com/wp-content/uploads/2017/12/Movie-Poster-Template-Dark-with-Image.jpg?x81279 " alt="movie-title" class="poster">
+                <p class="title">Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes - 100</p>
+                        <p class="vote-rating">Ratings: 4.5</p>
+                    </section>
+                    <i class="fa-regular fa-heart fa-2xl favourite-icon" ></i>
+                </section>
+            </li> -->
+        
+        </ul>
+        <div class="pagination">
+            <button id="prev-button">Previous</button>
+            <button id="page-number-button">Current Page: 1</button>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Movie Deck</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a00261938b.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
